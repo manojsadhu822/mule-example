@@ -1,0 +1,119 @@
+{
+	"contacts": [{
+		"last-modified-by": {
+			"user-name": "gw_api@guidewire.com.prod.dev",
+			"id": null,
+			"type": "User",
+			"name": "GW API"
+		},
+		"last-modified-date": "2015-07-09T18:26:24.000Z",
+		"created-by": {
+			"user-name": "guidewire1@tractionondemand.com.dev",
+			"id": null,
+			"type": "User",
+			"name": "Traction OnDemand"
+		},
+		"contact-name": "1317 ADAC e.V. Ship To",
+		"contact-type": "Ship To",
+		"account": {
+			"pw-cc-billing-state-lookup": null,
+			"billing-country": "Germany",
+			"billing-street": "ADAC e.V\nHansastra\u00dfe 19",
+			"billing-city": "M\u00fcnchen",
+			"billing-postal-code": "80686",
+			"id": null,
+			"type": "Account",
+			"billing-state": null
+		},
+		"type": "Account_Contact",
+		"name": "1317 - ADAC e.V. - ADAC e.V. Zentraleinkauf (Abteilung ZPV)",
+		"record-status": "Active",
+		"participant-account": {
+			"id": null,
+			"type": "Account",
+			"name": "ADAC e.V.",
+			"participant-id": "1317"
+		},
+		"contact-key": "11340",
+		"created-by-id": "005800000081HjbAAE",
+		"integration-status": "Integrated",
+		"created-date": "2015-07-08T18:00:03.000Z",
+		"contact": {
+			"secondary-email": null,
+			"other-phone": null,
+			"email": "christina.panitz@adac.de",
+			"url1": null,
+			"first-name": null,
+			"print-as": "Christina Panitz",
+			"type": "Contact",
+			"salutation": "Ms.",
+			"mobile-phone": null,
+			"middle-initial": null,
+			"phone": "+49 (0) 89 76 76 28 82",
+			"id": null,
+			"last-name": "ADAC e.V. Zentraleinkauf (Abteilung ZPV)",
+			"fax": null,
+			"status": "Active"
+		},
+		"id": "a4e340000009ulaAAA",
+		"last-modified-by-id": "00580000006WvJ4AAK"
+	}, {
+		"last-modified-by": {
+			"user-name": "gw_api@guidewire.com.prod.dev",
+			"id": null,
+			"type": "User",
+			"name": "GW API"
+		},
+		"last-modified-date": "2015-07-09T18:26:24.000Z",
+		"created-by": {
+			"user-name": "guidewire1@tractionondemand.com.dev",
+			"id": null,
+			"type": "User",
+			"name": "Traction OnDemand"
+		},
+		"contact-name": "1317 ADAC e.V. Ship To",
+		"contact-type": "Ship To",
+		"account": {
+			"pw-cc-billing-state-lookup": null,
+			"billing-country": "Germany",
+			"billing-street": "ADAC e.V\nHansastra\u00dfe 19",
+			"billing-city": "M\u00fcnchen",
+			"billing-postal-code": "80686",
+			"id": null,
+			"type": "Account",
+			"billing-state": null
+		},
+		"type": "Account_Contact",
+		"name": "1317 - ADAC e.V. - ADAC e.V. Zentraleinkauf (Abteilung ZPV)",
+		"record-status": "Active",
+		"participant-account": {
+			"id": null,
+			"type": "Account",
+			"name": "ADAC e.V.",
+			"participant-id": "1317"
+		},
+		"contact-key": "11340",
+		"created-by-id": "005800000081HjbAAE",
+		"integration-status": "Integrated",
+		"created-date": "2015-07-08T18:00:03.000Z",
+		"contact": {
+			"secondary-email": null,
+			"other-phone": null,
+			"email": "christina.panitz@adac.de",
+			"url1": null,
+			"first-name": null,
+			"print-as": "Christina Panitz",
+			"type": "Contact",
+			"salutation": "Ms.",
+			"mobile-phone": null,
+			"middle-initial": null,
+			"phone": "+49 (0) 89 76 76 28 82",
+			"id": null,
+			"last-name": "ADAC e.V. Zentraleinkauf (Abteilung ZPV)",
+			"fax": null,
+			"status": "Active"
+		},
+		"id": "a4e340000009ulaAAA",
+		"last-modified-by-id": "00580000006WvJ4AAK"
+	}]
+}

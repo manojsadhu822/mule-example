@@ -1,0 +1,111 @@
+#%RAML 0.8
+---
+#===============================================================
+#  Invoices API - definition
+#  References:
+#    - RAML Specification - http://raml.org/spec.html
+#    - RAML Projects - http://raml.org/projects.html
+#    - RAML Tools  - http://www.apihub.com/raml-tools
+#===============================================================
+title:  airline service api
+version: 1.0
+#baseUri: https://{gw-domian-name}.cloudhub.com/{app_name}/V{version}/
+baseUri: https://mocksvc.mulesoft.com/mocks/922c3626-ec79-4806-9bf2-05ba4dac1567{gw-domian-name}.cloudhub.com/{app_name}/V{version}/
+mediaType:  application/json
+protocols: [ HTTP, HTTPS ]
+traits:
+  -  secured-by-client-id:
+      headers:
+       client_id:
+        description: valid client id for the api
+        type: string
+        required: false
+       client_secret:
+        description: valid client secret for the api
+        type: string
+        required: false
+        
+      responses:
+        400:
+           body:
+            application/json:
+               example: |
+                 {
+                   "statusCode": "400",
+                   "statusMessage": "reason not accepted"
+                  }
+        401:
+         body:
+           application/json:
+             example: |
+               {
+                  "statusCode": "401",
+                  "statusMessage": "invalid or missing client id and/or secret"
+                }
+        403:
+         body:
+           application/json:
+             example: |
+               {
+                  "statusCode": "403",
+                  "statusMessage": "no access to this method"
+                }
+        500:
+         body:
+           application/json:
+             example: |
+               {
+                  "statusCode": "500",
+                  "statusMessage": "Internal Service error"
+                }
+        
+  -  standard-api-responses:
+      responses:
+        200:
+          body:
+            application/json:
+              example: |
+                {
+                  "statusCode": "200",
+                  "statusMessage": "success"
+                }
+
+  -  reliability-pattern-response:
+      responses:
+        202:
+          body:
+            application/json:
+              example: |
+                {
+                  "statusCode": "202",
+                  "statusMessage": "accepted"
+                }
+
+#===============================================================
+#  Schema Declarations
+#===============================================================
+
+schemas:
+ - contacts: !include schemas/contacts.json
+#===============================================================
+# API resource definitions
+#===============================================================    
+
+/v1:
+  /process:
+   /contacts:
+     post:
+        description: publishes financial force contacts to db & post event initiator message to topic.
+        is: [secured-by-client-id,standard-api-responses]
+        body:
+          schema: ! contacts 
+          example: !include  examples/contacts.json
+          
+
+  /accounts:
+     post:
+        description: publishes financial force contacts to db & post event initiator message to topic.
+        is: [secured-by-client-id,standard-api-responses]
+        body:
+          schema: ! contacts 
+          example: !include  examples/contacts.json

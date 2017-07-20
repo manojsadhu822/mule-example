@@ -1,0 +1,302 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"type": "object",
+	"properties": {
+		"contacts": {
+			"type": "array",
+			"items": {
+				"type": "object",
+				"properties": {
+					"last-modified-by": {
+						"type": "object",
+						"properties": {
+							"user-name": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/last-modified-by/user-name"
+							},
+							"id": {
+								"type": "null",
+								"id": "http://jsonschema.net/contacts/last-modified-by/id"
+							},
+							"type": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/last-modified-by/type"
+							},
+							"name": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/last-modified-by/name"
+							}
+						},
+						"id": "http://jsonschema.net/contacts/last-modified-by",
+						"required": [
+							"user-name",
+							"id",
+							"type",
+							"name"
+						]
+					},
+					"last-modified-date": {
+						"type": "string",
+						"id": "http://jsonschema.net/contacts/last-modified-date"
+					},
+					"created-by": {
+						"type": "object",
+						"properties": {
+							"user-name": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/created-by/user-name"
+							},
+							"id": {
+								"type": "null",
+								"id": "http://jsonschema.net/contacts/created-by/id"
+							},
+							"type": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/created-by/type"
+							},
+							"name": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/created-by/name"
+							}
+						},
+						"id": "http://jsonschema.net/contacts/created-by",
+						"required": [
+							"user-name",
+							"id",
+							"type",
+							"name"
+						]
+					},
+					"contact-name": {
+						"type": "string",
+						"id": "http://jsonschema.net/contacts/contact-name"
+					},
+					"contact-type": {
+						"type": "string",
+						"id": "http://jsonschema.net/contacts/contact-type"
+					},
+					"account": {
+						"type": "object",
+						"properties": {
+							"pw-cc-billing-state-lookup": {
+								"type": "null",
+								"id": "http://jsonschema.net/contacts/account/pw-cc-billing-state-lookup"
+							},
+							"billing-country": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/account/billing-country"
+							},
+							"billing-street": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/account/billing-street"
+							},
+							"billing-city": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/account/billing-city"
+							},
+							"billing-postal-code": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/account/billing-postal-code"
+							},
+							"id": {
+								"type": "null",
+								"id": "http://jsonschema.net/contacts/account/id"
+							},
+							"type": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/account/type"
+							},
+							"billing-state": {
+								"type": "null",
+								"id": "http://jsonschema.net/contacts/account/billing-state"
+							}
+						},
+						"id": "http://jsonschema.net/contacts/account",
+						"required": [
+							"pw-cc-billing-state-lookup",
+							"billing-country",
+							"billing-street",
+							"billing-city",
+							"billing-postal-code",
+							"id",
+							"type",
+							"billing-state"
+						]
+					},
+					"type": {
+						"type": "string",
+						"id": "http://jsonschema.net/contacts/type"
+					},
+					"name": {
+						"type": "string",
+						"id": "http://jsonschema.net/contacts/name"
+					},
+					"record-status": {
+						"type": "string",
+						"id": "http://jsonschema.net/contacts/record-status"
+					},
+					"participant-account": {
+						"type": "object",
+						"properties": {
+							"id": {
+								"type": "null",
+								"id": "http://jsonschema.net/contacts/participant-account/id"
+							},
+							"type": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/participant-account/type"
+							},
+							"name": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/participant-account/name"
+							},
+							"participant-id": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/participant-account/participant-id"
+							}
+						},
+						"id": "http://jsonschema.net/contacts/participant-account",
+						"required": [
+							"id",
+							"type",
+							"name",
+							"participant-id"
+						]
+					},
+					"contact-key": {
+						"type": "string",
+						"id": "http://jsonschema.net/contacts/contact-key"
+					},
+					"created-by-id": {
+						"type": "string",
+						"id": "http://jsonschema.net/contacts/created-by-id"
+					},
+					"integration-status": {
+						"type": "string",
+						"id": "http://jsonschema.net/contacts/integration-status"
+					},
+					"created-date": {
+						"type": "string",
+						"id": "http://jsonschema.net/contacts/created-date"
+					},
+					"contact": {
+						"type": "object",
+						"properties": {
+							"secondary-email": {
+								"type": "null",
+								"id": "http://jsonschema.net/contacts/contact/secondary-email"
+							},
+							"other-phone": {
+								"type": "null",
+								"id": "http://jsonschema.net/contacts/contact/other-phone"
+							},
+							"email": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/contact/email"
+							},
+							"url1": {
+								"type": "null",
+								"id": "http://jsonschema.net/contacts/contact/url1"
+							},
+							"first-name": {
+								"type": "null",
+								"id": "http://jsonschema.net/contacts/contact/first-name"
+							},
+							"print-as": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/contact/print-as"
+							},
+							"type": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/contact/type"
+							},
+							"salutation": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/contact/salutation"
+							},
+							"mobile-phone": {
+								"type": "null",
+								"id": "http://jsonschema.net/contacts/contact/mobile-phone"
+							},
+							"middle-initial": {
+								"type": "null",
+								"id": "http://jsonschema.net/contacts/contact/middle-initial"
+							},
+							"phone": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/contact/phone"
+							},
+							"id": {
+								"type": "null",
+								"id": "http://jsonschema.net/contacts/contact/id"
+							},
+							"last-name": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/contact/last-name"
+							},
+							"fax": {
+								"type": "null",
+								"id": "http://jsonschema.net/contacts/contact/fax"
+							},
+							"status": {
+								"type": "string",
+								"id": "http://jsonschema.net/contacts/contact/status"
+							}
+						},
+						"id": "http://jsonschema.net/contacts/contact",
+						"required": [
+							"secondary-email",
+							"other-phone",
+							"email",
+							"url1",
+							"first-name",
+							"print-as",
+							"type",
+							"salutation",
+							"mobile-phone",
+							"middle-initial",
+							"phone",
+							"id",
+							"last-name",
+							"fax",
+							"status"
+						]
+					},
+					"id": {
+						"type": "string",
+						"id": "http://jsonschema.net/contacts/id"
+					},
+					"last-modified-by-id": {
+						"type": "string",
+						"id": "http://jsonschema.net/contacts/last-modified-by-id"
+					}
+				},
+				"id": "http://jsonschema.net/contacts",
+				"required": [
+					"last-modified-by",
+					"last-modified-date",
+					"created-by",
+					"contact-name",
+					"contact-type",
+					"account",
+					"type",
+					"name",
+					"record-status",
+					"participant-account",
+					"contact-key",
+					"created-by-id",
+					"integration-status",
+					"created-date",
+					"contact",
+					"id",
+					"last-modified-by-id"
+				]
+			},
+			"id": "http://jsonschema.net/contacts"
+		}
+	},
+	"id": "http://jsonschema.net",
+	"required": [
+		"contacts"
+	]
+}
